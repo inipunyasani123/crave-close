@@ -2,7 +2,7 @@
 
 Landing page Positive Crave konsep "Close": cara baru untuk merasa dekat — desain, edukasi, dan eksplorasi.
 
-**Demo live:** https://crave-close.vercel.app
+**Demo live:** https://crave-close.pintuweb.id
 
 ![Tangkapan layar Positive Crave](public/og.jpg)
 

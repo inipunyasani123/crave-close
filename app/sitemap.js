@@ -1,7 +1,7 @@
 import { PRODUK } from '@/lib/katalog'
 import { OBROLAN } from '@/lib/obrolan'
 
-const SITE = 'https://crave-close.vercel.app'
+const SITE = 'https://crave-close.pintuweb.id'
 
 export default function sitemap() {
   const now = new Date()

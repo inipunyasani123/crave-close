@@ -4,7 +4,7 @@ import CheckoutPage from '@/components/CheckoutPage'
 export const metadata = {
   title: 'Pemesanan — Positive Crave',
   description: 'Selesaikan pemesanan Anda. Bisa dikirim ke alamat pasangan, dengan satu kartu percakapan gratis.',
-  alternates: { canonical: 'https://crave-close.vercel.app/checkout' },
+  alternates: { canonical: 'https://crave-close.pintuweb.id/checkout' },
   robots: { index: false, follow: true },
 }
 

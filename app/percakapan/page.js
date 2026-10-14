@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Dek Percakapan — Positive Crave',
   description:
     'Dua puluh empat kartu percakapan untuk pasangan dalam tiga dek: ringan, lebih dalam, dan sesudahnya. Tidak satu pun menyebut produk.',
-  alternates: { canonical: 'https://crave-close.vercel.app/percakapan' },
+  alternates: { canonical: 'https://crave-close.pintuweb.id/percakapan' },
 }
 
 const ATURAN = [

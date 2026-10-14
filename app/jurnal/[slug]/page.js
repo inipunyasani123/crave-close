@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Jarak from '@/components/Jarak'
 import { OBROLAN, obrolanBySlug } from '@/lib/obrolan'
 
-const SITE = 'https://crave-close.vercel.app'
+const SITE = 'https://crave-close.pintuweb.id'
 
 export function generateStaticParams() {
   return OBROLAN.map((o) => ({ slug: o.slug }))

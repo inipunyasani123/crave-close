@@ -5,7 +5,7 @@ import Jarak from '@/components/Jarak'
 import Kesepakatan from '@/components/Kesepakatan'
 import { PRODUK, produkBySlug, rupiah, situasiDari } from '@/lib/katalog'
 
-const SITE = 'https://crave-close.vercel.app'
+const SITE = 'https://crave-close.pintuweb.id'
 
 export function generateStaticParams() {
   return PRODUK.map((p) => ({ slug: p.slug }))

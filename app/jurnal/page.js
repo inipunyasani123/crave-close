@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Obrolan — Positive Crave',
   description:
     'Tulisan berbentuk dialog tentang perbedaan keinginan, hubungan jarak jauh, dan menyepakati kata berhenti — untuk pasangan yang ingin lebih dekat.',
-  alternates: { canonical: 'https://crave-close.vercel.app/jurnal' },
+  alternates: { canonical: 'https://crave-close.pintuweb.id/jurnal' },
 }
 
 export default function ObrolanPage() {

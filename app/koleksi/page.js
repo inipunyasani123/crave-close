@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Jarak from '@/components/Jarak'
 import { PRODUK, SITUASI, rupiah } from '@/lib/katalog'
 
-const SITE = 'https://crave-close.vercel.app'
+const SITE = 'https://crave-close.pintuweb.id'
 
 export const metadata = {
   title: 'Koleksi menurut Situasi — Positive Crave',
