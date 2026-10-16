@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { OBROLAN } from '@/lib/obrolan'
+import { meta } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Obrolan — Positive Crave',
+export const metadata = meta({
+  title: 'Obrolan',
   description:
     'Tulisan berbentuk dialog tentang perbedaan keinginan, hubungan jarak jauh, dan menyepakati kata berhenti — untuk pasangan yang ingin lebih dekat.',
-  alternates: { canonical: 'https://crave-close.pintuweb.id/jurnal' },
-}
+  path: '/jurnal',
+})
 
 export default function ObrolanPage() {
   return (

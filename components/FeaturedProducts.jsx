@@ -7,20 +7,22 @@ import { PRODUK, rupiah, situasiDari } from '@/lib/katalog'
 export default function FeaturedProducts() {
   const unggulan = PRODUK.filter((p) => p.unggulan).slice(0, 3)
   return (
-    <section id="produk" aria-labelledby="produk-judul" className="border-t border-mist/10 bg-deep py-20 md:py-28">
+    <section id="produk" aria-labelledby="produk-judul" className="border-t border-mist/10 bg-deep py-16 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-12 max-w-xl">
+        <div className="mb-10 max-w-xl md:mb-12">
           <p className="micro mb-5 text-tide">Pilihan</p>
           <h2 id="produk-judul" className="text-[2.1rem] leading-[1.12] md:text-[2.9rem]">Tiga barang, tiga kalimat pembuka</h2>
         </div>
-        <ul className="grid gap-6 md:grid-cols-3">
+        {/* Ponsel: tiga pilihan dijajar mendatar (geser) supaya foto 4:3 selebar
+            layar tidak memanjangkan beranda hampir dua layar. */}
+        <ul className="no-scrollbar -mx-6 flex snap-x snap-mandatory scroll-px-6 gap-4 overflow-x-auto px-6 pb-1 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0">
           {unggulan.map((p) => (
-            <li key={p.slug}>
+            <li key={p.slug} className="w-[76%] shrink-0 snap-start md:w-auto">
               <article className="card-soft group relative flex h-full flex-col overflow-hidden">
                 <div className="relative aspect-[4/3]">
-                  <Image src={p.image} alt={p.nama} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <Image src={p.image} alt={p.nama} fill sizes="(min-width: 768px) 33vw, 76vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
-                <div className="flex flex-1 flex-col p-6">
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
                   <p className="micro text-haze">{situasiDari(p.situasi).label}</p>
                   <h3 className="mt-2 text-2xl">
                     <Link href={`/produk/${p.slug}`} className="after:absolute after:inset-0">{p.nama}</Link>

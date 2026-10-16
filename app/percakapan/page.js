@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import DekKartu from '@/components/DekKartu'
 import Jarak from '@/components/Jarak'
+import { meta } from '@/lib/seo'
 
-export const metadata = {
-  title: 'Dek Percakapan — Positive Crave',
+export const metadata = meta({
+  title: 'Dek Percakapan',
   description:
     'Dua puluh empat kartu percakapan untuk pasangan dalam tiga dek: ringan, lebih dalam, dan sesudahnya. Tidak satu pun menyebut produk.',
-  alternates: { canonical: 'https://crave-close.pintuweb.id/percakapan' },
-}
+  path: '/percakapan',
+})
 
 const ATURAN = [
   ['Satu kartu cukup', 'Tidak perlu menghabiskan dek. Satu pertanyaan yang dijawab jujur lebih berharga dari sepuluh yang terburu-buru.'],

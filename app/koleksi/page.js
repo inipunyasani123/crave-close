@@ -2,15 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Jarak from '@/components/Jarak'
 import { PRODUK, SITUASI, rupiah } from '@/lib/katalog'
+import { meta, SITE } from '@/lib/seo'
 
-const SITE = 'https://crave-close.pintuweb.id'
-
-export const metadata = {
-  title: 'Koleksi menurut Situasi — Positive Crave',
+export const metadata = meta({
+  title: 'Koleksi menurut Situasi',
   description:
-    'Koleksi Positive Crave disusun menurut situasi hubungan: saat baru mulai, saat ingin lebih dekat, saat berjauhan, dan untuk diri sendiri. Setiap barang datang dengan obrolan pembukanya.',
-  alternates: { canonical: `${SITE}/koleksi` },
-}
+    'Koleksi Positive Crave menurut situasi hubungan: baru mulai, ingin lebih dekat, berjauhan, dan untuk diri sendiri — tiap barang datang dengan obrolan pembuka.',
+  path: '/koleksi',
+})
 
 const itemList = {
   '@context': 'https://schema.org',

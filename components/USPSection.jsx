@@ -11,18 +11,18 @@ const JANJI = [
 
 export default function USPSection() {
   return (
-    <section id="jaminan" aria-labelledby="jaminan-judul" className="bg-deep-2 py-20 md:py-28">
+    <section id="jaminan" aria-labelledby="jaminan-judul" className="bg-deep-2 py-16 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-12 max-w-xl">
+        <div className="mb-10 max-w-xl md:mb-12">
           <p className="micro mb-5 text-tide">Yang kami jamin</p>
           <h2 id="jaminan-judul" className="text-[2.1rem] leading-[1.12] md:text-[2.9rem]">Empat hal, semuanya bisa diperiksa</h2>
         </div>
-        <dl className="grid gap-px overflow-hidden rounded-2xl border border-mist/10 bg-mist/10 sm:grid-cols-2 lg:grid-cols-4">
+        <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-mist/10 bg-mist/10 lg:grid-cols-4">
           {JANJI.map(([j, d], i) => (
-            <div key={j} className="bg-deep-2 p-7">
-              <p aria-hidden="true" className="font-[family-name:var(--font-display)] text-3xl text-tide">0{i + 1}</p>
-              <dt className="mt-4 font-[family-name:var(--font-display)] text-2xl text-mist">{j}</dt>
-              <dd className="mt-3 text-sm leading-relaxed text-haze">{d}</dd>
+            <div key={j} className="bg-deep-2 p-4 sm:p-7">
+              <p aria-hidden="true" className="font-[family-name:var(--font-display)] text-2xl text-tide sm:text-3xl">0{i + 1}</p>
+              <dt className="mt-3 font-[family-name:var(--font-display)] text-xl leading-tight text-mist sm:mt-4 sm:text-2xl">{j}</dt>
+              <dd className="mt-2 text-[0.8125rem] leading-relaxed text-haze sm:mt-3 sm:text-sm">{d}</dd>
             </div>
           ))}
         </dl>

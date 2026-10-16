@@ -6,12 +6,12 @@ import Footer from "@/components/Footer";
 const display = Instrument_Serif({ subsets: ["latin"], variable: "--font-display", weight: "400", style: ["normal","italic"] });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":"Positive Crave — Konsep Close","description":"Landing page brand keintiman","url":"https://crave-close.pintuweb.id"};
+const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":"Positive Crave — Konsep Close","description":"Konsep desain toko brand keintiman pasangan yang dimulai dari percakapan, dibuat untuk kontes brief Positive Crave","url":"https://crave-close.pintuweb.id"};
 
 export const metadata = {
   metadataBase: new URL("https://crave-close.pintuweb.id"),
   title: "Positive Crave — Konsep Close",
-  description: "Landing page Positive Crave konsep \"Close\": cara baru untuk merasa dekat — desain, edukasi, dan eksplorasi.",
+  description: "Konsep toko Positive Crave yang dimulai dari obrolan: dek 24 kartu percakapan, koleksi menurut situasi hubungan, dan kesepakatan sebelum mencoba.",
   applicationName: "Positive Crave",
   keywords: ["intimacy brand", "wellness pasangan", "landing page", "desain web"],
   authors: [{ name: "Positive Crave" }],
@@ -22,15 +22,15 @@ export const metadata = {
     type: "website",
     locale: "id_ID",
     url: "https://crave-close.pintuweb.id",
-    siteName: "Positive Crave",
+    siteName: "Positive Crave — Konsep Close",
     title: "Positive Crave — Konsep Close",
-    description: "Landing page Positive Crave konsep \"Close\": cara baru untuk merasa dekat — desain, edukasi, dan eksplorasi.",
+    description: "Konsep toko Positive Crave yang dimulai dari obrolan: dek 24 kartu percakapan, koleksi menurut situasi hubungan, dan kesepakatan sebelum mencoba.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Positive Crave — Konsep Close" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Positive Crave — Konsep Close",
-    description: "Landing page Positive Crave konsep \"Close\": cara baru untuk merasa dekat — desain, edukasi, dan eksplorasi.",
+    description: "Konsep toko Positive Crave yang dimulai dari obrolan: dek 24 kartu percakapan, koleksi menurut situasi hubungan, dan kesepakatan sebelum mencoba.",
     images: ["/og.jpg"],
   },
   robots: {

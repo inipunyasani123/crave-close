@@ -3,9 +3,9 @@ import { OBROLAN } from '@/lib/obrolan'
 
 export default function ObrolanTeaser() {
   return (
-    <section id="obrolan" aria-labelledby="obrolan-teaser" className="bg-deep-2 py-20 md:py-28">
+    <section id="obrolan" aria-labelledby="obrolan-teaser" className="bg-deep-2 py-16 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-12 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-10 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between md:mb-12">
           <div className="max-w-xl">
             <p className="micro mb-5 text-tide">Obrolan</p>
             <h2 id="obrolan-teaser" className="text-[2.1rem] leading-[1.12] md:text-[2.9rem]">Ditulis sebagai percakapan</h2>
@@ -14,7 +14,7 @@ export default function ObrolanTeaser() {
             Semua obrolan
           </Link>
         </div>
-        <ul className="grid gap-5 md:grid-cols-3">
+        <ul className="grid gap-3 sm:gap-5 md:grid-cols-3">
           {OBROLAN.map((o) => {
             const [a, b] = o.isi.find((x) => x.dialog).dialog
             return (

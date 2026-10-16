@@ -2,8 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Jarak from '@/components/Jarak'
 import { OBROLAN, obrolanBySlug } from '@/lib/obrolan'
-
-const SITE = 'https://crave-close.pintuweb.id'
+import { meta, SITE } from '@/lib/seo'
 
 export function generateStaticParams() {
   return OBROLAN.map((o) => ({ slug: o.slug }))
@@ -13,12 +12,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params
   const o = obrolanBySlug(slug)
   if (!o) return {}
-  return {
-    title: `${o.judul} — Obrolan, Positive Crave`,
-    description: o.ringkas,
-    alternates: { canonical: `${SITE}/jurnal/${o.slug}` },
-    openGraph: { type: 'article' },
-  }
+  return meta({ title: o.judul, description: o.ringkas, path: `/jurnal/${o.slug}`, type: 'article' })
 }
 
 function Blok({ b }) {

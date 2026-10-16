@@ -36,11 +36,11 @@ const kartu = [
 
 export default function Conversation() {
   return (
-    <section id="percakapan" className="relative overflow-hidden bg-deep py-20 md:py-28">
+    <section id="percakapan" className="relative overflow-hidden bg-deep py-16 md:py-28">
       <div aria-hidden="true" className="tide-glow absolute inset-0" />
 
       <div className="relative z-10 mx-auto max-w-6xl px-6">
-        <div className="mb-14 max-w-2xl">
+        <div className="mb-10 max-w-2xl md:mb-14">
           <p className="micro mb-5 text-tide">Percakapan Pembuka</p>
           <h2 className="text-[2.1rem] leading-[1.14] md:text-[2.9rem]">
             Yang paling sulit biasanya bukan mencobanya —
