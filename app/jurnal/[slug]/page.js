@@ -60,7 +60,7 @@ export default async function ObrolanArtikel({ params }) {
       <div aria-hidden="true" className="tide-glow absolute inset-0" />
       <div className="relative mx-auto max-w-2xl px-6">
         <nav aria-label="Remah roti" className="micro text-haze">
-          <Link href="/jurnal" className="hover:text-tide">Obrolan</Link> <span aria-hidden="true">/</span> {o.menit} menit baca
+          <Link href="/jurnal" className="hover:text-tide sentuh">Obrolan</Link> <span aria-hidden="true">/</span> {o.menit} menit baca
         </nav>
         <Jarak jarak={2} className="mt-8 h-10 w-28 text-tide" />
         <h1 className="mt-6 text-[2.6rem] leading-[1.05] md:text-[3.4rem]">{o.judul}</h1>

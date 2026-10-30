@@ -66,7 +66,7 @@ export default function DekKartu() {
       </div>
 
       <details className="card-soft mx-auto mt-14 max-w-3xl p-6">
-        <summary className="cursor-pointer text-sm font-semibold text-mist">Lihat semua 24 kartu</summary>
+        <summary className="flex min-h-11 cursor-pointer items-center text-sm font-semibold text-mist">Lihat semua 24 kartu</summary>
         <div className="mt-6 grid gap-8 sm:grid-cols-3">
           {DEK.map((x) => (
             <div key={x.id}>

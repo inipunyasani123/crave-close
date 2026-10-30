@@ -37,7 +37,7 @@ export default function ContactSupport() {
                 Ini purwarupa desain untuk kontes, jadi pertanyaan {sebagai === 'Berdua' ? 'kalian' : 'Anda'} tidak terkirim
                 ke mana pun.
               </p>
-              <button type="button" onClick={() => setTerkirim(false)} className="micro mt-6 border-b border-tide/50 pb-1 text-tide hover:border-tide">
+              <button type="button" onClick={() => setTerkirim(false)} className="micro mt-6 border-b border-tide/50 pb-1 text-tide hover:border-tide sentuh-x">
                 Tulis pertanyaan lain
               </button>
             </div>
