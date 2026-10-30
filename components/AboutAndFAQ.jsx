@@ -34,7 +34,7 @@ export default function AboutAndFAQ() {
               <div className="px-6 pb-6 text-sm leading-relaxed text-haze">
                 <p>{t.a}</p>
                 {t.tautan && (
-                  <Link href={t.tautan[0]} className="micro mt-4 inline-block text-tide hover:text-mist">{t.tautan[1]} →</Link>
+                  <Link href={t.tautan[0]} className="micro mt-4 inline-block text-tide hover:text-mist sentuh">{t.tautan[1]} →</Link>
                 )}
               </div>
             </details>

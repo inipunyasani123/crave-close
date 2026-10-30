@@ -113,7 +113,7 @@ export default function CheckoutPage() {
                   <dd className="text-lg font-semibold text-tide">{rupiah(p.harga + ONGKIR)}</dd>
                 </div>
               </dl>
-              <Link href={`/produk/${p.slug}`} className="micro mt-5 inline-block text-tide hover:text-mist">← Kembali ke produk</Link>
+              <Link href={`/produk/${p.slug}`} className="micro mt-5 inline-block text-tide hover:text-mist sentuh">← Kembali ke produk</Link>
             </div>
           </aside>
         </div>
